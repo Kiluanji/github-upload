@@ -15,10 +15,6 @@ def email_results(
         files=[]
         ):
 
-    #subject = "An email with attachment from Python"
-    #body = "This is an email with attachment sent from Python"
-    #sender_email = "alvaroneto.ch@gmail.com"
-    #receiver_email = "alvaroneto.ch@gmail.com"
     with open('/home/alvaro/gmail_password.txt') as f:
         password = f.read().rstrip('\n')
 

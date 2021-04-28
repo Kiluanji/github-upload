@@ -6,6 +6,9 @@ trading system.
 
 import datetime as dt
 import os
+import sys
+import subprocess
+import pkg_resources
 
 dir_path = os.path.dirname(os.path.realpath(__name__))
 download_dir = os.path.join(dir_path, 'downloads/')
@@ -18,6 +21,7 @@ try:
     os.mkdir(output_dir)
 except FileExistsError:
     pass
+
 ch_yield_file = 'ch_yield.csv'
 ch_eq_file = 'six_eq.csv'
 portfolio_file = 'portfolio.csv'
